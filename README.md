@@ -1,3 +1,3 @@
-# Apresentação  Workshop LCAD
+# Apresentação Workshop LCAD
 
-[slides]("./reveal.js/index.html")
+[slides](./reveal.js/index.html)
