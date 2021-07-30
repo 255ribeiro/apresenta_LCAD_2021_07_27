@@ -1,86 +1,88 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Programação para Arqutetos e Urbanistas</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/league.css">
+	<title>Programação para Arqutetos e Urbanistas</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/league.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
 <style>
+	.row {
+		display: flex;
+	}
 
-.row {
-	display: flex;
-  }
-  
-  .column {
-	flex: 33.33%;
-	padding: 5px;
-  }
-
-  
-
+	.column {
+		flex: 33.33%;
+		padding: 5px;
+	}
 </style>
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
+<body>
+	<div class="reveal">
+		<div class="slides">
 
-				<!-- CAPA -->
-				<section  style="margin: 0px; padding: 0px;">
+			<!-- CAPA -->
+			<section style="margin: 0px; padding: 0px;">
 
-					<div class="row">
-						<div class="column">
-						  <img src=".\img\LCAD.jpg" alt="lcad" style="width:100px">
-						</div>
-						<div><br><h4 style="font-size: 34px;">27/07/2021<br>workshop temas emergentes:</h4></div>
+				<div class="row">
+					<div class="column">
+						<img src=".\img\LCAD.jpg" alt="lcad" style="width:100px">
+					</div>
+					<div><br>
+						<h4 style="font-size: 34px;">27/07/2021<br>workshop temas emergentes:</h4>
+					</div>
 
-						<div class="column">
-						  <img src=".\img\Bras_da_UFBA.png" alt="ufba" style="width:100px">
-						</div>
+					<div class="column">
+						<img src=".\img\Bras_da_UFBA.png" alt="ufba" style="width:100px">
+					</div>
 
-					</div> 
+				</div>
 
-					  <br>
+				<br>
 
-					<h2>cidade, arquitetura e tecnologias digitais</h2>
+				<h2>cidade, arquitetura e tecnologias digitais</h2>
 
-					<h4>Programação para Arquitetos e Urbanistas:<br>Perspectiva para Pesquisadores</h4>
-					<br>
-					<p style="font-size: 22px; position: absolute; left: 40px;">Fernando Ferraz Ribeiro - fernando.ribeiro@ufba.br</p>
+				<h4>Programação para Arquitetos e Urbanistas:<br>Perspectiva para Pesquisadores</h4>
+				<br>
+				<p style="font-size: 22px; position: absolute; left: 40px;">Fernando Ferraz Ribeiro -
+					fernando.ribeiro@ufba.br</p>
 
-				</section>
+			</section>
 
+			<section>
+				<blockquote
+					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+					"The more accurate the map, the more it resembles the territory. The most accurate map possible
+					would be the territory, and thus would be perfectly accurate and perfectly useless."
+				</blockquote>
+				<p> Neil Gaiman, American Gods</p>
+
+
+			</section>
+
+			<!-- Tipos de Arquivos -->
+
+			<section data-background-color="DarkGoldenRod">
 				<section>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						"The more accurate the map, the more it resembles the territory. The most accurate map possible would be the territory, and thus would be perfectly accurate and perfectly useless." 
-					</blockquote>
-					<p> Neil Gaiman, American Gods</p>
-
-
-				</section>
-
-				<!-- Tipos de Arquivos -->
-
-				<section data-background-color="DarkGoldenRod">
-					<section>
 					<h2>Tipos de Arquivos:</h2>
 					<p>Os arquivo digitais podem ser divididos em dois tipos:<br><br></p>
-					
+
 					<ul style=" line-height: 2;">
 
 						<aside class="notes">
 							todo arquivo é binário
 							Um arquivo é considerado binário quando 30% ou mais do seu conteudo não é "plain text"
-						
-					  	</aside>
+
+						</aside>
 						<li>"Binários"</li>
 						<li>Plain text</li>
 
@@ -90,35 +92,40 @@
 
 				<section>
 					<h3 style="text-align: left;">Exemplo:</h3>
-					<p style="font-size: 1rem;">Um aquivo cad contendo um círculo de raio 10, centro na origem e um texto de altura 1 foi salvo nos formatos DWG e DXF (compatíveis com Autocad 2013). Depois os aruivos foram abertos em um programa de plain text.</p>
+					<p style="font-size: 1rem;">Um aquivo cad contendo um círculo de raio 10, centro na origem e um
+						texto de altura 1 foi salvo nos formatos DWG e DXF (compatíveis com Autocad 2013). Depois os
+						aruivos foram abertos em um programa de plain text.</p>
 
-					<img style=" height: 500px;" src="./img/nanocad.png"/>
+					<img style=" height: 500px;" src="./img/nanocad.png" />
 
 				</section>
 
 				<section>
 					<h4>Arquivo DWG - Binário</h4>
-					<img style="width: 100%;" src="./img/dwg_exemplo.png"/>
+					<img style="width: 100%;" src="./img/dwg_exemplo.png" />
 				</section>
 
 				<section>
 					<h4>Arquivo DXF - plain Text</h4>
-					<img style="width: 100%;" src="./img/dxf_exemplo.png"/>
+					<img style="width: 100%;" src="./img/dxf_exemplo.png" />
 				</section>
 
 				<section>
-					<h5>Os programas, softwares, apps e formatos de arquivos, são definidos em arquivos de teto simples. Programar exige, dente outras habilidades, a familiaridade com os ambientes de edição de código (arquivos plain text)</h5>
-					
+					<h5>Os programas, softwares, apps e formatos de arquivos, são definidos em arquivos de teto simples.
+						Programar exige, dente outras habilidades, a familiaridade com os ambientes de edição de código
+						(arquivos plain text)</h5>
+
 				</section>
 
 
 				<section>
-					<h3>Exemplos de Arquivos Plain Text Importantes no estado da arte da computação aplicada a arquitetura e urbanismo:</h3>
+					<h3>Exemplos de Arquivos Plain Text Importantes no estado da arte da computação aplicada a
+						arquitetura e urbanismo:</h3>
 				</section>
 				<section>
 
 					<h3> IFC SPF </h3>
-				<pre style="font-size: 1rem;"><code><script type="text/template">
+					<pre style="font-size: 1rem;"><code><script type="text/template">
 					ISO-10303-21;
 HEADER;
 /* NOTE a valid model view name has to be asserted, replacing 'notYetAssigned' ----------------- */
@@ -241,7 +248,9 @@ ENDSEC;
 END-ISO-10303-21;
 					
 					</script></code></pre>
-					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black" href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a></p>
+					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black"
+							href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a>
+					</p>
 				</section>
 
 				<section>
@@ -425,7 +434,9 @@ END-ISO-10303-21;
 
 						</script></code></pre>
 
-						<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black" href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a></p>
+					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black"
+							href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a>
+					</p>
 				</section>
 
 				<section>
@@ -434,476 +445,478 @@ END-ISO-10303-21;
 
 
 					<pre style="font-size: 1rem;"><code><script type="text/template">
+{
+	"ifc": [
+	{
+	{
+	"type": "IfcProject",
+	"GlobalId": "0xScRe4drECQ4DMSqUjd6d",
+	"Name": "proxy with brep",
+	"OwnerHistory": 
+	{
+	"ChangeAction": "added",
+	"LastModifiedDate": "1320688800",
+	"CreationDate": "1320688800",
+	"OwningUser": 
+	{
+		"ThePerson": 
+		{
+		"FamilyName": "Liebich",
+		"GivenName": "Thomas"
+		}
+	,
+		"TheOrganization": 
+		{
+		"id": 1,
+		"Name": "buildingSMART International"
+		}
+	
+	},
+	"OwningApplication": 
+	{
+		"Version": "1.0",
+		"ApplicationFullName": "IFC text editor",
+		"ApplicationIdentifier": "ifcTE",
+		"ApplicationDeveloper": 
+		{
+		"href": 1
+		}
+	
+	}
+	},
+	"IsDecomposedBy": 
+	[
+	{
+		"type": "IfcRelAggregates",
+		"GlobalId": "2YBqaV_8L15eWJ9DA1sGmT",
+		"RelatedObjects": 
+		[
+		{
+		"type": "IfcBuilding",
+		"GlobalId": "2FCZDorxHDT8NI01kdXi8P",
+		"Name": "Test Building",
+		"CompositionType": "element",
+		"ObjectPlacement": 
+		{
+		"type": "IfcLocalPlacement",
+		"id": 2,
+		"RelativePlacement": 
+		{
+			"type": "IfcAxis2Placement3D",
+			"Location": 
+			{
+			"id": 11,
+			"Coordinates": "0 0 0"
+			}
+	
+		}
+		},
+		"ContainsElements": 
+		[
+		{
+			"type": "IfcRelContainedInSpatialStructure",
+			"GlobalId": "2TnxZkTXT08eDuMuhUUFNy",
+			"Name": "Physical model",
+			"RelatedElements": 
+			[
+			{
+			"type": "IfcBuildingElementProxy",
+			"GlobalId": "1kTvXnbbzCWw8lcMd1dR4o",
+			"Name": "P-1",
+			"Description": "sample proxy",
+			"ObjectPlacement": 
+			{
+			"type": "IfcLocalPlacement",
+			"PlacementRelTo": 
+			{
+				"type": "IfcLocalPlacement",
+				"href": 2
+			}
+	,
+			"RelativePlacement": 
+			{
+				"type": "IfcAxis2Placement3D",
+				"Location": 
 				{
-					"ifc": [
-					{
-					{
-					"type": "IfcProject",
-					"GlobalId": "0xScRe4drECQ4DMSqUjd6d",
-					"Name": "proxy with brep",
-					"OwnerHistory": 
-					{
-					"ChangeAction": "added",
-					"LastModifiedDate": "1320688800",
-					"CreationDate": "1320688800",
-					"OwningUser": 
-					{
-						"ThePerson": 
-						{
-						"FamilyName": "Liebich",
-						"GivenName": "Thomas"
-						}
-					,
-						"TheOrganization": 
-						{
-						"id": 1,
-						"Name": "buildingSMART International"
-						}
-					
-					},
-					"OwningApplication": 
-					{
-						"Version": "1.0",
-						"ApplicationFullName": "IFC text editor",
-						"ApplicationIdentifier": "ifcTE",
-						"ApplicationDeveloper": 
-						{
-						"href": 1
-						}
-					
-					}
-					},
-					"IsDecomposedBy": 
+				"Coordinates": "1000 0 0"
+				}
+	
+			}
+			},
+			"Representation": 
+			{
+			"type": "IfcProductDefinitionShape",
+			"Representations": 
+			[
+				{
+				"type": "IfcShapeRepresentation",
+				"RepresentationIdentifier": "Body",
+				"RepresentationType": "Brep",
+				"ContextOfItems": 
+				{
+				"type": "IfcGeometricRepresentationSubContext",
+				"id": 12,
+				"ContextIdentifier": "Body",
+				"ContextType": "Model",
+				"CoordinateSpaceDimension": "0",
+				"TargetView": "model_view"
+				}
+	,
+				"Items": 
+				[
+				{
+				"type": "IfcFacetedBrep",
+				"Outer": 
+				{
+					"CfsFaces": 
 					[
 					{
-						"type": "IfcRelAggregates",
-						"GlobalId": "2YBqaV_8L15eWJ9DA1sGmT",
-						"RelatedObjects": 
-						[
-						{
-						"type": "IfcBuilding",
-						"GlobalId": "2FCZDorxHDT8NI01kdXi8P",
-						"Name": "Test Building",
-						"CompositionType": "element",
-						"ObjectPlacement": 
-						{
-						"type": "IfcLocalPlacement",
-						"id": 2,
-						"RelativePlacement": 
-						{
-							"type": "IfcAxis2Placement3D",
-							"Location": 
-							{
-							"id": 11,
-							"Coordinates": "0 0 0"
-							}
-					
-						}
-						},
-						"ContainsElements": 
-						[
-						{
-							"type": "IfcRelContainedInSpatialStructure",
-							"GlobalId": "2TnxZkTXT08eDuMuhUUFNy",
-							"Name": "Physical model",
-							"RelatedElements": 
-							[
-							{
-							"type": "IfcBuildingElementProxy",
-							"GlobalId": "1kTvXnbbzCWw8lcMd1dR4o",
-							"Name": "P-1",
-							"Description": "sample proxy",
-							"ObjectPlacement": 
-							{
-							"type": "IfcLocalPlacement",
-							"PlacementRelTo": 
-							{
-								"type": "IfcLocalPlacement",
-								"href": 2
-							}
-					,
-							"RelativePlacement": 
-							{
-								"type": "IfcAxis2Placement3D",
-								"Location": 
-								{
-								"Coordinates": "1000 0 0"
-								}
-					
-							}
-							},
-							"Representation": 
-							{
-							"type": "IfcProductDefinitionShape",
-							"Representations": 
-							[
-								{
-								"type": "IfcShapeRepresentation",
-								"RepresentationIdentifier": "Body",
-								"RepresentationType": "Brep",
-								"ContextOfItems": 
-								{
-								"type": "IfcGeometricRepresentationSubContext",
-								"id": 12,
-								"ContextIdentifier": "Body",
-								"ContextType": "Model",
-								"CoordinateSpaceDimension": "0",
-								"TargetView": "model_view"
-								}
-					,
-								"Items": 
-								[
-								{
-								"type": "IfcFacetedBrep",
-								"Outer": 
-								{
-									"CfsFaces": 
-									[
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"id": 9,
-										"Coordinates": "-500 -500 0"
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 4,
-										"Coordinates": "500 -500 0"
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 3,
-										"Coordinates": "500 -500 2000"
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 10,
-										"Coordinates": "-500 -500 2000"
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}                ,
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"href": 3
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 4
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 6,
-										"Coordinates": "500 500 0"
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 5,
-										"Coordinates": "500 500 2000"
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}                ,
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"href": 5
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 6
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 8,
-										"Coordinates": "-500 500 0"
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"id": 7,
-										"Coordinates": "-500 500 2000"
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}                ,
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"href": 7
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 8
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 9
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 10
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}                ,
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"href": 9
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 8
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 6
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 4
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}                ,
-									{
-									"type": "IfcFace",
-									"Bounds": 
-									[
-									{
-										"type": "IfcFaceOuterBound",
-										"Orientation": "true",
-										"Bound": 
-										{
-										"type": "IfcPolyLoop",
-										"Polygon": 
-										[
-										{
-										"type": "IfcCartesianPoint",
-										"href": 3
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 5
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 7
-										}
-										,
-										{
-										"type": "IfcCartesianPoint",
-										"href": 10
-										}
-					
-										]
-					
-										}
-									}
-									]
-					
-									}
-									]
-					
-								}
-								}
-								]
-					
-								}
-							]
-					
-							}
-							}
-							]
-					
-						}
-						]
-					
-						}
-						]
-					
-					}
-					]
-					,
-					"RepresentationContexts": 
+					"type": "IfcFace",
+					"Bounds": 
 					[
 					{
-						"type": "IfcGeometricRepresentationContext",
-						"ContextType": "Model",
-						"CoordinateSpaceDimension": "3",
-						"Precision": "1E-05",
-						"WorldCoordinateSystem": 
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
 						{
-						"type": "IfcAxis2Placement3D",
-						"Location": 
-						{
-						"href": 11
-						}
-					
-						},
-						"HasSubContexts": 
+						"type": "IfcPolyLoop",
+						"Polygon": 
 						[
 						{
-						"type": "IfcGeometricRepresentationSubContext",
-						"href": 12
-						}
-					
-						]
-					
-					}
-					]
-					,
-					"UnitsInContext": 
-					{
-					"Units": 
-					[
-						{
-						"type": "IfcSIUnit",
-						"UnitType": "lengthunit",
-						"Prefix": "milli",
-						"Name": "metre"
+						"type": "IfcCartesianPoint",
+						"id": 9,
+						"Coordinates": "-500 -500 0"
 						}
 						,
 						{
-						"type": "IfcConversionBasedUnit",
-						"UnitType": "planeangleunit",
-						"Name": "degree",
-						"Dimensions": 
-						{
-						"LengthExponent": "0",
-						"MassExponent": "0",
-						"TimeExponent": "0",
-						"ElectricCurrentExponent": "0",
-						"ThermodynamicTemperatureExponent": "0",
-						"AmountOfSubstanceExponent": "0",
-						"LuminousIntensityExponent": "0"
+						"type": "IfcCartesianPoint",
+						"id": 4,
+						"Coordinates": "500 -500 0"
 						}
-					,
-						"ConversionFactor": 
+						,
 						{
-						"ValueComponent": 
+						"type": "IfcCartesianPoint",
+						"id": 3,
+						"Coordinates": "500 -500 2000"
+						}
+						,
 						{
-						"type": "IfcPlaneAngleMeasure",
-						"value": "0.017453293"
-						},
-						"UnitComponent": 
-						{
-						"type": "IfcSIUnit",
-						"UnitType": "planeangleunit",
-						"Name": "radian"
+						"type": "IfcCartesianPoint",
+						"id": 10,
+						"Coordinates": "-500 -500 2000"
 						}
-					
+	
+						]
+	
 						}
-						}
-					]
-					
-					}
-					},
 					}
 					]
+	
+					}                ,
+					{
+					"type": "IfcFace",
+					"Bounds": 
+					[
+					{
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
+						{
+						"type": "IfcPolyLoop",
+						"Polygon": 
+						[
+						{
+						"type": "IfcCartesianPoint",
+						"href": 3
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 4
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"id": 6,
+						"Coordinates": "500 500 0"
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"id": 5,
+						"Coordinates": "500 500 2000"
+						}
+	
+						]
+	
+						}
 					}
+					]
+	
+					}                ,
+					{
+					"type": "IfcFace",
+					"Bounds": 
+					[
+					{
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
+						{
+						"type": "IfcPolyLoop",
+						"Polygon": 
+						[
+						{
+						"type": "IfcCartesianPoint",
+						"href": 5
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 6
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"id": 8,
+						"Coordinates": "-500 500 0"
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"id": 7,
+						"Coordinates": "-500 500 2000"
+						}
+	
+						]
+	
+						}
+					}
+					]
+	
+					}                ,
+					{
+					"type": "IfcFace",
+					"Bounds": 
+					[
+					{
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
+						{
+						"type": "IfcPolyLoop",
+						"Polygon": 
+						[
+						{
+						"type": "IfcCartesianPoint",
+						"href": 7
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 8
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 9
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 10
+						}
+	
+						]
+	
+						}
+					}
+					]
+	
+					}                ,
+					{
+					"type": "IfcFace",
+					"Bounds": 
+					[
+					{
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
+						{
+						"type": "IfcPolyLoop",
+						"Polygon": 
+						[
+						{
+						"type": "IfcCartesianPoint",
+						"href": 9
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 8
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 6
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 4
+						}
+	
+						]
+	
+						}
+					}
+					]
+	
+					}                ,
+					{
+					"type": "IfcFace",
+					"Bounds": 
+					[
+					{
+						"type": "IfcFaceOuterBound",
+						"Orientation": "true",
+						"Bound": 
+						{
+						"type": "IfcPolyLoop",
+						"Polygon": 
+						[
+						{
+						"type": "IfcCartesianPoint",
+						"href": 3
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 5
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 7
+						}
+						,
+						{
+						"type": "IfcCartesianPoint",
+						"href": 10
+						}
+	
+						]
+	
+						}
+					}
+					]
+	
+					}
+					]
+	
+				}
+				}
+				]
+	
+				}
+			]
+	
+			}
+			}
+			]
+	
+		}
+		]
+	
+		}
+		]
+	
+	}
+	]
+	,
+	"RepresentationContexts": 
+	[
+	{
+		"type": "IfcGeometricRepresentationContext",
+		"ContextType": "Model",
+		"CoordinateSpaceDimension": "3",
+		"Precision": "1E-05",
+		"WorldCoordinateSystem": 
+		{
+		"type": "IfcAxis2Placement3D",
+		"Location": 
+		{
+		"href": 11
+		}
+	
+		},
+		"HasSubContexts": 
+		[
+		{
+		"type": "IfcGeometricRepresentationSubContext",
+		"href": 12
+		}
+	
+		]
+	
+	}
+	]
+	,
+	"UnitsInContext": 
+	{
+	"Units": 
+	[
+		{
+		"type": "IfcSIUnit",
+		"UnitType": "lengthunit",
+		"Prefix": "milli",
+		"Name": "metre"
+		}
+		,
+		{
+		"type": "IfcConversionBasedUnit",
+		"UnitType": "planeangleunit",
+		"Name": "degree",
+		"Dimensions": 
+		{
+		"LengthExponent": "0",
+		"MassExponent": "0",
+		"TimeExponent": "0",
+		"ElectricCurrentExponent": "0",
+		"ThermodynamicTemperatureExponent": "0",
+		"AmountOfSubstanceExponent": "0",
+		"LuminousIntensityExponent": "0"
+		}
+	,
+		"ConversionFactor": 
+		{
+		"ValueComponent": 
+		{
+		"type": "IfcPlaneAngleMeasure",
+		"value": "0.017453293"
+		},
+		"UnitComponent": 
+		{
+		"type": "IfcSIUnit",
+		"UnitType": "planeangleunit",
+		"Name": "radian"
+		}
+	
+		}
+		}
+	]
+	
+	}
+	},
+	}
+	]
+	}
 
 						</script></code></pre>
 
-					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black" href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a></p>
+					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black"
+							href="https://technical.buildingsmart.org/standards/ifc/ifc-examples/">https://technical.buildingsmart.org/standards/ifc/ifc-examples/</a>
+					</p>
 
 				</section>
 
@@ -938,8 +951,10 @@ END-ISO-10303-21;
 
 						</script></code></pre>
 
-						<p  style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black" href="https://www.citygmlwiki.org/index.php?title=FZK_Haus">https://www.citygmlwiki.org/index.php?title=FZK_Haus</a></p>
-				
+					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black"
+							href="https://www.citygmlwiki.org/index.php?title=FZK_Haus">https://www.citygmlwiki.org/index.php?title=FZK_Haus</a>
+					</p>
+
 
 				</section>
 				<section>
@@ -984,228 +999,271 @@ END-ISO-10303-21;
 						</code>
 					</pre>
 
-					<p  style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black" href="https://gist.github.com/wavded/1200773?short_path=99c1af9">https://gist.github.com/wavded/1200773?short_path=99c1af9</a></p>
+					<p style="font-size: 1rem; color: black">fonte: <a target="_blank" style="color: black"
+							href="https://gist.github.com/wavded/1200773?short_path=99c1af9">https://gist.github.com/wavded/1200773?short_path=99c1af9</a>
+					</p>
 
 				</section>
 
-				</section>
+			</section>
 
-				<!-- Arquitetura -->
+			<!-- Arquitetura -->
+			<section>
+
 				<section>
-
-					<section>
-					<H5 style= "text-align: center;">Arquitetura e construção:<br>Panorama dos útimos artigos publicados na revista</H5>
+					<H5 style="text-align: center;">Arquitetura e construção:<br>Panorama dos útimos artigos publicados
+						na revista</H5>
 					<h2>AUTOMATION IN CONSTRUCTION</h2>
-					<a target="_blank" href="https://www.journals.elsevier.com/automation-in-construction">https://www.journals.elsevier.com/automation-in-construction</a>
-					</section>
-						<section>
-							<h4 style="text-align: left;">Linha Editorial:</h4>
-							<div style="font-size: 1.5rem; text-align:justify; text-justify: inter-word;">
-								Automation in Construction is an international journal for the publication of original research papers. The journal publishes refereed material on <span style="color: LightCoral;"> aspects pertaining to the use of Information Technologies in Design, Engineering, Construction Technologies, and Maintenance and Management of Constructed Facilities.</span> The scope of Automation in Construction is broad, encompassing all stages of the construction life cycle from initial planning and design, through construction of the facility, its operation and maintenance, to the eventual dismantling and recycling of buildings and engineering structures. The following list of topics is not intended to be exhaustive, but rather to indicate topics that fall within the journal's purview:<br><br>
-
-								<ul style=" color: LightCoral;">
-								<li>Computer-aided design, product modeling, decision support systems, classification and standardization, product data interchange</li>
-								<li>Computer-aided engineering, process simulation models, graphics</li>
-								<li>Robotics, metrology, logistics, automated inspection, demolition/remediation
-								</li>
-								<li>Facilities management, management information systems, intelligent control systems.</li>
-								
-								</ul>
-							</div>
-						
-
-						</section>
-
-						<section data-background-color="white">
-							<h4> Dados Biliométricos</h4>
-							<img src="./img/aic_cita.png"/>
-							
-
-						</section>
-						
-						<section>
-							<h5 style="text-align: left;">Artigos recentes:</h5>
-							<img style="width: 70%;" src="./img/aic.png"/>
-							<p style="text-align: left; font-size: 1rem;">
-								Conforme acesso no dia 23/07/2021
-							</p>
-						</section>
-
-						<section>
-							<h5 style="text-align: left;">Artigo 01:</h5>
-							<img src="./img/aic/ppr01/capa.png"/>
-							<a target="_blank" style="font-size: 1.2rem;" href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.autcon.2021.103825&domain=pdf">https://crossmark.crossref.org/dialog/?doi=10.1016/j.autcon.2021.103825&domain=pdf</a>
-
-
-						</section>
-
-						<section>
-							<h5 style="text-align: left;">Artigo 02:</h5>
-							<img src="./img/aic/ppr02/capa.png"/>
-							<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0926580521002272?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0926580521002272?via%3Dihub</a>
-
-
-						</section>
-
-						<section>
-							<h5 style="text-align: left;">Artigo 03:</h5>
-							<img src="./img/aic/ppr03/capa.png"/>
-						
-							<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0926580521002612?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0926580521002612?via%3Dihub</a>
-
-
-						</section>
-
-						<section>
-							<h5 style="text-align: left;">Artigo 04:</h5>
-							<img src="./img/aic/ppr04/capa.png"/>
-							<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0926580521002569#f0005">https://www.sciencedirect.com/science/article/pii/S0926580521002569#f0005</a>
-
-
-						</section>
-
-
-						<section>
-		
-							<h6 style="text-align: left;">Extra:<br>Parametric Solutions</h6>
-
-							<iframe title="vimeo-player" src="https://player.vimeo.com/video/563634098" width="640" height="360" frameborder="0"  allow="autoplay;" allowfullscreen ></iframe>
-
-							<a target="_blank" href="https://www.parametric.se/">https://www.parametric.se/</a>
-
-						</section>
-
+					<a target="_blank"
+						href="https://www.journals.elsevier.com/automation-in-construction">https://www.journals.elsevier.com/automation-in-construction</a>
 				</section>
-
-				<!-- Urbanismo -->
 				<section>
-					
-					<section>
-						<H5 style= "text-align: center;">Urbanismo e Cidades:<br>Panorama dos útimos artigos publicados na revista</H5>
-						<h2>Cities</h2>
-						<a target="_blank" href="https://www.journals.elsevier.com/cities">https://www.journals.elsevier.com/cities</a>
-					</section>
+					<h4 style="text-align: left;">Linha Editorial:</h4>
+					<div style="font-size: 1.5rem; text-align:justify; text-justify: inter-word;">
+						Automation in Construction is an international journal for the publication of original research
+						papers. The journal publishes refereed material on <span style="color: LightCoral;"> aspects
+							pertaining to the use of Information Technologies in Design, Engineering, Construction
+							Technologies, and Maintenance and Management of Constructed Facilities.</span> The scope of
+						Automation in Construction is broad, encompassing all stages of the construction life cycle from
+						initial planning and design, through construction of the facility, its operation and
+						maintenance, to the eventual dismantling and recycling of buildings and engineering structures.
+						The following list of topics is not intended to be exhaustive, but rather to indicate topics
+						that fall within the journal's purview:<br><br>
 
-					<section>
-						<h4 style="text-align: left;">Linha Editorial:</h4>
-						<div style="font-size: 1.2rem; text-align:justify; text-justify: inter-word;">
-							Cities publishes articles on many aspects of urban planning and policy. It distinguishes itself by providing an international and interdisciplinary platform for the exchange of ideas and information among urban planners, policy makers and analysts, and urbanists from all disciplines.<br><br>
+						<ul style=" color: LightCoral;">
+							<li>Computer-aided design, product modeling, decision support systems, classification and
+								standardization, product data interchange</li>
+							<li>Computer-aided engineering, process simulation models, graphics</li>
+							<li>Robotics, metrology, logistics, automated inspection, demolition/remediation
+							</li>
+							<li>Facilities management, management information systems, intelligent control systems.</li>
 
-							The primary aims of the journal are to analyze and assess past and present urban development and management as a reflection of effective, ineffective and non-existent planning policies; and the promotion of the implementation of appropriate urban policies in both the developed and the developing world.<br><br>
-
-							Topics covered include: urban adaptation to climate change; gentrification and housing; homelessness and welfare services; urban management; public-private sector cooperation; development and planning problems; urban regeneration; neighborhood conservation and urban design; immigration and international labor migration; urban politics; urban theory; urban governance; <span style="color: LightCoral;">smart cities and regions</span>; infrastructure; livability and quality of life; greening; and the complexities of creating sustainable cities.<br><br>
-
-							Every year, we also publish a handful of Viewpoints. These are articles that are shorter in nature, summative in their literature review, and offer a particular argument that could potentially generate debates among scholars and practitioners.<br><br>
-
-							Each volume also features one or more City Profiles. Coverage includes a brief description of the city's historical development, an account of contemporary conditions, problems or issues, and a critical review of recent or current policy, planning or management responses.
-
-							</ul>
-						</div>
-					
-
-					</section>
-					
-					<section data-background-color="white">
-						<h4> Dados Biliométricos</h4>
-						<img src="./img/cities_cita.png"/>
-						
-
-					</section>
-
-
-					<section>
-						<h5 style="text-align: left;">Artigos recentes:</h5>
-						<img style="width: 80%;" src="./img/cities.png"/>
-						<p style="text-align: left; font-size: 1rem;">
-							Conforme acesso no dia 23/07/2021
-						</p>
-
-
-					</section>
-
-					<section>
-
-						<h5 style="text-align: left;">Artigo 01:</h5>
-						<img src="./img/cities/ppr01/capa.png"\>
-						<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0264275121002468?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002468?via%3Dihub</a>
-
-					</section>
-
-
-					<section>
-
-						<h5 style="text-align: left;">Artigo 02:</h5>
-						<img src="./img/cities/ppr02/capa.png"\>
-						<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0264275121002456?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002456?via%3Dihub</a>
-
-					</section>
-
-					<section>
-
-						<h5 style="text-align: left;">Artigo 03:</h5>
-						<img src="./img/cities/ppr03/capa.png"\>
-						<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S0264275121002298?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002298?via%3Dihub</a>
-
-					</section>
-
-					
-					<section>
-
-						<h5 style="text-align: left;">Artigo 04:</h5>
-						<img src="./img/cities/ppr04/capa.png"\>
-						<a target="_blank" style="font-size: 1.2rem;" href="https://www.sciencedirect.com/science/article/pii/S026427512100233X?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S026427512100233X?via%3Dihub</a>
-
-					</section>
-
+						</ul>
+					</div>
 
 
 				</section>
 
-				<!-- Conclusão -->
+				<section data-background-color="white">
+					<h4> Dados Biliométricos</h4>
+					<img src="./img/aic_cita.png" />
+
+
+				</section>
+
+				<section>
+					<h5 style="text-align: left;">Artigos recentes:</h5>
+					<img style="width: 70%;" src="./img/aic.png" />
+					<p style="text-align: left; font-size: 1rem;">
+						Conforme acesso no dia 23/07/2021
+					</p>
+				</section>
+
+				<section>
+					<h5 style="text-align: left;">Artigo 01:</h5>
+					<img src="./img/aic/ppr01/capa.png" />
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://crossmark.crossref.org/dialog/?doi=10.1016/j.autcon.2021.103825&domain=pdf">https://crossmark.crossref.org/dialog/?doi=10.1016/j.autcon.2021.103825&domain=pdf</a>
+
+
+				</section>
+
+				<section>
+					<h5 style="text-align: left;">Artigo 02:</h5>
+					<img src="./img/aic/ppr02/capa.png" />
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0926580521002272?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0926580521002272?via%3Dihub</a>
+
+
+				</section>
+
+				<section>
+					<h5 style="text-align: left;">Artigo 03:</h5>
+					<img src="./img/aic/ppr03/capa.png" />
+
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0926580521002612?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0926580521002612?via%3Dihub</a>
+
+
+				</section>
+
+				<section>
+					<h5 style="text-align: left;">Artigo 04:</h5>
+					<img src="./img/aic/ppr04/capa.png" />
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0926580521002569#f0005">https://www.sciencedirect.com/science/article/pii/S0926580521002569#f0005</a>
+
+
+				</section>
+
+
 				<section>
 
+					<h6 style="text-align: left;">Extra:<br>Parametric Solutions</h6>
 
-					<section data-background-color="indigo" >
+					<iframe title="vimeo-player" src="https://player.vimeo.com/video/563634098" width="640" height="360"
+						frameborder="0" allow="autoplay;" allowfullscreen></iframe>
 
-						<h3 style="text-align: left;">Reflexões:</h3>
-
-						<img style="width: 70%;" src="img/MAPA_conceitual_ciencia_de_dados.jpg"/><br>
-
-
-					</section>
-
-					<section data-background-color="indigo" >
-
-						<h3 style="text-align: left;">Reflexões:</h3>
-						<img style="width: 70%;" src="img/will-robots-take-over-our-jobs.jpg"/><br>
-
-						<a target="_blank" style="font-size: 1.2rem;" href="https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg"> https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg </a>
-
-					</section>
+					<a target="_blank" href="https://www.parametric.se/">https://www.parametric.se/</a>
 
 				</section>
 
-				</div>
-			</div>
+			</section>
+
+			<!-- Urbanismo -->
+			<section>
+
+				<section>
+					<H5 style="text-align: center;">Urbanismo e Cidades:<br>Panorama dos útimos artigos publicados na
+						revista</H5>
+					<h2>Cities</h2>
+					<a target="_blank"
+						href="https://www.journals.elsevier.com/cities">https://www.journals.elsevier.com/cities</a>
+				</section>
+
+				<section>
+					<h4 style="text-align: left;">Linha Editorial:</h4>
+					<div style="font-size: 1.2rem; text-align:justify; text-justify: inter-word;">
+						Cities publishes articles on many aspects of urban planning and policy. It distinguishes itself
+						by providing an international and interdisciplinary platform for the exchange of ideas and
+						information among urban planners, policy makers and analysts, and urbanists from all
+						disciplines.<br><br>
+
+						The primary aims of the journal are to analyze and assess past and present urban development and
+						management as a reflection of effective, ineffective and non-existent planning policies; and the
+						promotion of the implementation of appropriate urban policies in both the developed and the
+						developing world.<br><br>
+
+						Topics covered include: urban adaptation to climate change; gentrification and housing;
+						homelessness and welfare services; urban management; public-private sector cooperation;
+						development and planning problems; urban regeneration; neighborhood conservation and urban
+						design; immigration and international labor migration; urban politics; urban theory; urban
+						governance; <span style="color: LightCoral;">smart cities and regions</span>; infrastructure;
+						livability and quality of life; greening; and the complexities of creating sustainable
+						cities.<br><br>
+
+						Every year, we also publish a handful of Viewpoints. These are articles that are shorter in
+						nature, summative in their literature review, and offer a particular argument that could
+						potentially generate debates among scholars and practitioners.<br><br>
+
+						Each volume also features one or more City Profiles. Coverage includes a brief description of
+						the city's historical development, an account of contemporary conditions, problems or issues,
+						and a critical review of recent or current policy, planning or management responses.
+
+						</ul>
+					</div>
+
+
+				</section>
+
+				<section data-background-color="white">
+					<h4> Dados Biliométricos</h4>
+					<img src="./img/cities_cita.png" />
+
+
+				</section>
+
+
+				<section>
+					<h5 style="text-align: left;">Artigos recentes:</h5>
+					<img style="width: 80%;" src="./img/cities.png" />
+					<p style="text-align: left; font-size: 1rem;">
+						Conforme acesso no dia 23/07/2021
+					</p>
+
+
+				</section>
+
+				<section>
+
+					<h5 style="text-align: left;">Artigo 01:</h5>
+					<img src="./img/cities/ppr01/capa.png" \>
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0264275121002468?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002468?via%3Dihub</a>
+
+				</section>
+
+
+				<section>
+
+					<h5 style="text-align: left;">Artigo 02:</h5>
+					<img src="./img/cities/ppr02/capa.png" \>
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0264275121002456?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002456?via%3Dihub</a>
+
+				</section>
+
+				<section>
+
+					<h5 style="text-align: left;">Artigo 03:</h5>
+					<img src="./img/cities/ppr03/capa.png" \>
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S0264275121002298?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S0264275121002298?via%3Dihub</a>
+
+				</section>
+
+
+				<section>
+
+					<h5 style="text-align: left;">Artigo 04:</h5>
+					<img src="./img/cities/ppr04/capa.png" \>
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://www.sciencedirect.com/science/article/pii/S026427512100233X?via%3Dihub">https://www.sciencedirect.com/science/article/pii/S026427512100233X?via%3Dihub</a>
+
+				</section>
+
+
+
+			</section>
+
+			<!-- Conclusão -->
+			<section>
+
+
+				<section data-background-color="indigo">
+
+					<h3 style="text-align: left;">Reflexões:</h3>
+
+					<img style="width: 70%;" src="img/MAPA_conceitual_ciencia_de_dados.jpg" /><br>
+
+
+				</section>
+
+				<section data-background-color="indigo">
+
+					<h3 style="text-align: left;">Reflexões:</h3>
+					<img style="width: 70%;" src="img/will-robots-take-over-our-jobs.jpg" /><br>
+
+					<a target="_blank" style="font-size: 1.2rem;"
+						href="https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg">
+						https://d.ibtimes.co.uk/en/full/1622009/will-robots-take-over-our-jobs.jpg </a>
+
+				</section>
+
+			</section>
+
 		</div>
+	</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				transition: "convex",
-				slideNumber: true ,
-				hash: true,
-				progress: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			transition: "convex",
+			slideNumber: true,
+			hash: true,
+			progress: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
