@@ -4,7 +4,7 @@ theme: gaia
 size: 14:10 
 paginate: true
 header: "Seminário LCAD | 2021"
-footer: "Fernando Ferraz Ribeiro | ffribeiro@gmail.com"
+footer: "Fernando Ferraz Ribeiro | fernando.ribeiro@ufba.br"
 
 
 ---
